@@ -1,8 +1,8 @@
-# Sistema de Biblioteca Universitária
+# iBrary
 
 ## Introdução
 
-Bem-vindo ao repositório do Sistema de Biblioteca Universitária. Este projeto tem como foco controar o gerenciamento de livros de uma Biblioteca Universitária.
+Bem-vindo ao repositório do iBrary. Este projeto tem como foco criar um sistema de controle para o gerenciamento de livros de uma Biblioteca Universitária.
 
 ## Funcionalidades
 
