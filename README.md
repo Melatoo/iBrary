@@ -13,4 +13,7 @@ Bem-vindo ao repositório do iBrary. Este projeto tem como foco criar um sistema
 
 ## TECNOLOGIAS UTILIZADAS
 
-Ainda serão decididas.
+- Spring Boot
+- MySQL
+
+OBS: O restante das tecnologias serão decididas no futuro.
