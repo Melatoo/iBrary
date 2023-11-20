@@ -13,10 +13,10 @@ Bem-vindo ao repositório do iBrary. Este projeto tem como foco criar um sistema
 
 ## Tecnologias Utilizadas
 
-- Spring Boot
-- MySQL
-
-OBS: O restante das tecnologias serão decididas no futuro.
+- Frontend: React (versão 18.2.0)
+- Backend: NodeJS (versão 18.18.2)
+- Banco de dados: MySQL (versão 8.1)
+- IDE: VSCode
 
 ## Regras e padrões de uso
 
