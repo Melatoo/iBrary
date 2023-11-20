@@ -20,13 +20,13 @@ OBS: O restante das tecnologias serão decididas no futuro.
 
 ## Regras e padrões de uso
 
-# Regras de Commit
+### Regras de Commit
 
 - Cada mensagem de commit deve ser curta e descrever de forma clara e concisa a mudança realizada.
 - Colocar um resumo da mudança no título e detalhes adicionais no corpo, se necessário.
 - Evitar mensagens genéricas como "Correções gerais" ou "Atualizações diversas".
 
-# Uso de branches
+### Uso de branches
 
 - Manter a branch principal (main) sempre estável e pronta para implantação.
 - Não realizar alterações diretamente na branch principal.
