@@ -1,2 +1,5 @@
 # ignora os pacotes instalados
 node_modules
+
+# ignora as variaveis de ambiente
+.env
