@@ -28,8 +28,17 @@ Bem-vindo ao repositório do iBrary. Este projeto tem como foco criar um sistema
 
 ### Uso de branches
 
-- Manter a branch principal (main) sempre estável e pronta para implantação.
-- Não realizar alterações diretamente na branch principal.
-- Criar uma branch separada para cada nova funcionalidade ou recurso.
-- Nomear as branches de forma descritiva, usando palavras-chave relacionadas à funcionalidade.
+- Manter a branch principal (main) sempre estável e pronta para implantação;
+- Não realizar alterações diretamente na branch principal;
+- Criar uma branch separada para cada nova funcionalidade ou recurso;
+- Nomear as branches de forma descritiva, usando palavras-chave relacionadas à funcionalidade;
 - Sempre criar um Pull Request ao finalizar uma funcionalidade ou correção de bug.
+
+### Padrões de código
+
+- Utilizar sempre camelCase para nomes de variáveis, classes, funções, etc;
+- Identação deve ser feita com tabeamento de 4 espaços;
+- Evitar condição de negação de IF;
+- Evitar comentários desnecessários;
+- Evitar repetição de código;
+- Manter boa coesão e baixo acoplamento.
