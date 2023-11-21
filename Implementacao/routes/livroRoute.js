@@ -28,4 +28,18 @@ router.get("/remove/:id", (req, res) => {
         .finally(() => res.end());
 });
 
+router.post("/update/:id", (req, res) => {
+    if (JSON.stringify(req.body) !== "{}") {
+        Livro.update(req.body, {
+            where: {
+                id: req.params.id,
+            },
+        }).catch((err) => {
+            res.statusCode = 400;
+            console.log(err);
+        });
+    } else res.statusCode = 400;
+    res.end();
+});
+
 module.exports = router;
