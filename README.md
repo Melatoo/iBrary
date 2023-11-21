@@ -42,3 +42,8 @@ Bem-vindo ao repositório do iBrary. Este projeto tem como foco criar um sistema
 - Evitar comentários desnecessários;
 - Evitar repetição de código;
 - Manter boa coesão e baixo acoplamento.
+
+### Integrantes do grupo
+- Davi Silveira Siqueira
+- Thiago Melato Fonseca
+- Patrick Leite Oliveira
