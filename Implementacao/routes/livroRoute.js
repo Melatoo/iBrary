@@ -15,4 +15,17 @@ router.post("/add", (req, res) => {
         .finally(() => res.end());
 });
 
+router.get("/remove/:id", (req, res) => {
+    Livro.destroy({
+        where: {
+            id: req.params.id,
+        },
+    })
+        .catch((err) => {
+            res.statusCode = 400;
+            console.log(err);
+        })
+        .finally(() => res.end());
+});
+
 module.exports = router;
