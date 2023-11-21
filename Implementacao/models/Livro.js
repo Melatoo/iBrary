@@ -19,10 +19,7 @@ const Livro = sequelize.define("livro", {
         type: Sequelize.STRING,
         allowNull: false,
     },
-    dataCadastro: {
-        type: Sequelize.DATE,
-        allowNull: false,
-    },
+    // Os campos createdAt e updatedAt são criados por padrão pelo sequelize
 });
 
 // Livro.sync({ force: true });
