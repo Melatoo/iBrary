@@ -2,8 +2,8 @@ const express = require("express");
 const Livro = require("../models/Livro");
 const router = express.Router();
 
-router.post("/create", (req, res) => {
-    Livro.create({
+router.post("/create", async (req, res) => {
+    const livro = await Livro.create({
         nome: req.body.nome,
         editora: req.body.editora,
         autor: req.body.autor,
@@ -11,7 +11,7 @@ router.post("/create", (req, res) => {
         res.statusCode = 400;
         console.log(err);
     });
-    res.end();
+    res.end(JSON.stringify(livro));
 });
 
 router.get("/read/:id", async (req, res) => {

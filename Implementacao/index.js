@@ -1,10 +1,11 @@
 const express = require("express");
 const app = express();
 const livro = require("./routes/livroRoute");
+const bodyParser = require("body-parser");
 const { sequelize } = require("./models/db");
 
 // configurações
-app.use(express.json()); // configura json como content-type esperado em requisições
+app.use(bodyParser.json()); // configura json como content-type esperado em requisições
 
 // rotas
 app.use("/livro", livro);
