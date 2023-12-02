@@ -1,0 +1,12 @@
+#containerLogo {
+  display: flex;
+  flex-direction: row;
+  border-left: 5px solid #f8d442;
+  padding-left: 10px;
+}
+
+#texto {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+}

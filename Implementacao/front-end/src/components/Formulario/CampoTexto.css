@@ -1,9 +1,14 @@
-.containerCampo {
-  width: 85%;
-  margin-top: 20px;
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
-.campo {
+#containerCampo {
+  width: 85%;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+#campo {
   box-sizing: border-box;
   margin-top: 5px;
   border-radius: 5px;
@@ -12,6 +17,10 @@
   border: 1px solid #e5e5e5;
 }
 
-.campo::placeholder {
+#campo::placeholder {
   color: #cdcdcd;
+}
+
+#campo:focus {
+  outline: none;
 }
