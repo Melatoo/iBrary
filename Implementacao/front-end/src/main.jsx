@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Login from "./views/Login.jsx";
 import Cadastro from "./views/Cadastro.jsx";
+import Home from "./views/Home.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/cadastro",
     element: <Cadastro />,
+  },
+  {
+    path: "/home",
+    element: <Home />,
   },
 ]);
 

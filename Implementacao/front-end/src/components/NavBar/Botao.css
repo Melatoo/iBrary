@@ -1,0 +1,16 @@
+#botaoNavbar {
+    padding: 12px 16px;
+    color: black;
+    font-weight: 500;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 50px;
+    transition: background-color 0.25s;
+    width: 80%;
+}
+
+#botaoNavbar:hover {
+    background-color: #FEAF00;
+}
