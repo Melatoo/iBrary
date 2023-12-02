@@ -1,0 +1,36 @@
+#container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-family: Montserrat; */
+}
+
+.innerFormContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 19px;
+}
+
+#formContainer {
+  min-height: 500px;
+  min-width: 300px;
+  height: 60%;
+  width: 30%;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.botao {
+  padding-top: 15px;
+  margin-top: 30px;
+  padding-bottom: 15px;
+  border-radius: 4px;
+  width: 85%;
+  border: 0px;
+  color: white;
+  font-weight: 500;
+  background-color: #feaf00;
+}
