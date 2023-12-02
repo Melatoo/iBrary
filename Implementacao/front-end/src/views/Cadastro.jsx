@@ -1,27 +1,33 @@
 import Background from "../components/Background";
+import IbraryLogo from "../components/IbraryLogo";
+import Titulo from "../components/Formulario/Titulo";
 import CampoTexto from "../components/Formulario/CampoTexto";
 import Botao from "../components/Formulario/Botao";
-import Titulo from "../components/Formulario/Titulo";
-import IbraryLogo from "../components/IbraryLogo";
-import { Link } from "react-router-dom";
-import "./Login.css";
+import "./Cadastro.css";
 
-const Login = () => {
+const Cadastro = () => {
   return (
     <Background>
       <div id="container">
         <IbraryLogo />
-        <div id="loginTituloContainer">
-          <Titulo texto="Login" />
-        </div>
-        <div id="subtituloContainer">
-          <h4 id="subtitulo">Entre com seus dados para acessar sua conta</h4>
+        <div id="cadastroTituloContainer">
+          <Titulo texto="Cadastro" />
         </div>
         <form id="formContainer">
           <CampoTexto
             label="Email"
             placeholder="Digite seu email"
             name="email"
+          />
+          <CampoTexto
+            label="Nome completo"
+            placeholder="Digite seu nome completo"
+            name="nome"
+          />
+          <CampoTexto
+            label="Matrícula"
+            placeholder="Digite seu número de matrícula"
+            name="matricula"
           />
           <CampoTexto
             label="Senha"
@@ -32,12 +38,9 @@ const Login = () => {
             <Botao texto="Entrar" />
           </div>
         </form>
-        <Link to="/cadastro" id="cadastro">
-          Cadastrar
-        </Link>
       </div>
     </Background>
   );
 };
 
-export default Login;
+export default Cadastro;
