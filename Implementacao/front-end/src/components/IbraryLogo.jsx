@@ -1,9 +1,11 @@
 import "./IbraryLogo.css";
 
-const IbraryLogo = () => {
+const IbraryLogo = ({ fontSize }) => {
   return (
     <div id="containerLogo">
-      <h1 id="texto">iBrary</h1>
+      <h1 style={{ fontSize: fontSize }} id="texto">
+        iBrary
+      </h1>
     </div>
   );
 };

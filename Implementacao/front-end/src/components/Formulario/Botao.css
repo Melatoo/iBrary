@@ -1,4 +1,4 @@
-#botao {
+#botaoFormulario {
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 4px;
@@ -9,10 +9,10 @@
   background-color: #feaf00;
 }
 
-#botao:hover {
+#botaoFormulario:hover {
   background-color: #f0a500;
 }
 
-#botao:active {
+#botaoFormulario:active {
   background-color: #e59800;
 }
