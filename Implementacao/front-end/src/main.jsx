@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Login from "./views/Login.jsx";
 import Cadastro from "./views/Cadastro.jsx";
-import Home from "./views/Home.jsx";
+import AdminHome from "./views/AdminHome.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,8 +16,8 @@ const router = createBrowserRouter([
     element: <Cadastro />,
   },
   {
-    path: "/home",
-    element: <Home />,
+    path: "/admin/home",
+    element: <AdminHome />,
   },
 ]);
 

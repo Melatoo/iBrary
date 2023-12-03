@@ -4,11 +4,11 @@ import livroimg from "../assets/livro.png";
 import alunoimg from "../assets/aluno.png";
 import emprestimoimg from "../assets/emprestimo.png";
 import multaimg from "../assets/multa.png";
-import "./Home.css";
+import "./AdminHome.css";
 
-const Home = () => {
+const AdminHome = () => {
   return (
-    <div id="backgroundHome">
+    <div id="backgroundAdminHome">
       <Navbar />
       <div id="painelAdmin">
         <Card cor="#FFD4EF" texto="Livros" imagem={livroimg} />
@@ -20,4 +20,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AdminHome;
