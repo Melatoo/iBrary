@@ -29,7 +29,7 @@ const Login = () => {
             name="senha"
           />
           <div id="botaoContainer">
-            <Botao texto="Entrar" />
+            <Botao width="85%" texto="Entrar" />
           </div>
         </form>
         <Link to="/cadastro" id="cadastro">

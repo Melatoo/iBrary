@@ -5,6 +5,7 @@ import "./index.css";
 import Login from "./views/Login.jsx";
 import Cadastro from "./views/Cadastro.jsx";
 import AdminHome from "./views/AdminHome.jsx";
+import AdminLivros from "./views/AdminLivros.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/admin/home",
     element: <AdminHome />,
+  },
+  {
+    path: "/admin/livros",
+    element: <AdminLivros />,
   },
 ]);
 
