@@ -35,7 +35,7 @@ const Cadastro = () => {
             name="senha"
           />
           <div id="botaoContainer">
-            <Botao texto="Entrar" />
+            <Botao width="85%" texto="Entrar" />
           </div>
         </form>
       </div>

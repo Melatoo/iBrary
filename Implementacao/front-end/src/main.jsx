@@ -6,6 +6,7 @@ import Login from "./views/Login.jsx";
 import Cadastro from "./views/Cadastro.jsx";
 import AdminHome from "./views/AdminHome.jsx";
 import AlunoHome from "./views/AlunoHome.jsx";
+import AdminLivros from "./views/AdminLivros.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
     path: "/home",
     element: <AlunoHome />,
   },
+  {
+    path: "/admin/livros",
+    element: <AdminLivros />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
