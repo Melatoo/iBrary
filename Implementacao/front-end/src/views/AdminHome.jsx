@@ -1,4 +1,4 @@
-import Navbar from "../components/NavBar/Navbar";
+import Background from "../components/Painel/Background";
 import Card from "../components/Painel/Card";
 import livroimg from "../assets/livro.png";
 import alunoimg from "../assets/aluno.png";
@@ -8,15 +8,14 @@ import "./AdminHome.css";
 
 const AdminHome = () => {
   return (
-    <div id="backgroundAdminHome">
-      <Navbar />
+    <Background>
       <div id="painelAdmin">
         <Card cor="#FFD4EF" texto="Livros" imagem={livroimg} />
         <Card cor="#D8EFFF" texto="Alunos" imagem={alunoimg} />
         <Card cor="#FFF6CA" texto="Empréstimos" imagem={emprestimoimg} />
         <Card cor="#D1FFCD" texto="Multas ativas" imagem={multaimg} />
       </div>
-    </div>
+    </Background>
   );
 };
 
