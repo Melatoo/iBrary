@@ -1,9 +1,9 @@
 import React from "react";
 import IbraryLogo from "../IbraryLogo.jsx";
 import Botao from "./Botao.jsx";
-import "./navbar.css";
+import "./navbaradmin.css";
 
-const Navbar = () => {
+const NavbarAluno = () => {
   return (
     <nav className="navbar" id="fundoNavBar">
       <div style={{ marginLeft: "30px", marginTop: "30px" }}>
@@ -11,14 +11,12 @@ const Navbar = () => {
       </div>
 
       <div id="containerBotoes">
-        <Botao texto="Home" />
-        <Botao texto="Livros" />
-        <Botao texto="Alunos" />
-        <Botao texto="Meus Empréstimos" />
-        <Botao texto="Multas ativas" />
+        <Botao texto="Home" link="/admin/home" />
+        <Botao texto="Livros" link="/admin/livros" />
+        <Botao texto="Meus Empréstimos" link="/admin/emprestimos" />
       </div>
     </nav>
   );
 };
 
-export default Navbar;
+export default NavbarAluno;

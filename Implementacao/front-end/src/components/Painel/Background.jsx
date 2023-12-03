@@ -1,5 +1,5 @@
 import "./Background.css";
-import Navbar from "../NavBar/Navbar";
+import Navbar from "../NavBar/NavBarAdmin";
 
 const Background = ({ children }) => {
   return (
