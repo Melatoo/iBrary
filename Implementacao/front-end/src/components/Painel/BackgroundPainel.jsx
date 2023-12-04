@@ -12,15 +12,7 @@ const BackgroundPainel = ({ tipoLista, textoBotao, children }) => {
           <Botao height="45px" texto={textoBotao} />
         </div>
         <hr id="hr" />
-        <div id="painelLivros">
-          <CardLivro
-            titulo="O Pequeno Príncipe"
-            editora="Editora 1"
-            autor="Autor 1"
-            id="1"
-            data="01/01/2021"
-          />
-        </div>
+        <div id="painelLivros">{children}</div>
       </div>
     </BackgroundAdmin>
   );
