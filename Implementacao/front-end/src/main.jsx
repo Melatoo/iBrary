@@ -4,9 +4,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import Login from "./views/Login.jsx";
 import Cadastro from "./views/Cadastro.jsx";
-import AdminHome from "./views/AdminHome.jsx";
-import AlunoHome from "./views/AlunoHome.jsx";
-import AdminLivros from "./views/AdminLivros.jsx";
+import AdminHome from "./views/Admin/AdminHome.jsx";
+import AlunoHome from "./views/Aluno/AlunoHome.jsx";
+import AdminLivros from "./views/Admin/AdminLivros.jsx";
 
 const router = createBrowserRouter([
   {

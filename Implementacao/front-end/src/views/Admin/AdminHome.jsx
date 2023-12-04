@@ -1,10 +1,10 @@
-import Card from "../components/Painel/Card";
-import livroimg from "../assets/livro.png";
-import alunoimg from "../assets/aluno.png";
-import emprestimoimg from "../assets/emprestimo.png";
-import multaimg from "../assets/multa.png";
+import Card from "../../components/Painel/Card";
+import livroimg from "../../assets/livro.png";
+import alunoimg from "../../assets/aluno.png";
+import emprestimoimg from "../../assets/emprestimo.png";
+import multaimg from "../../assets/multa.png";
 import "./AdminHome.css";
-import BackgroundAdmin from "../components/Painel/BackgroundAdmin";
+import BackgroundAdmin from "../../components/Painel/BackgroundAdmin";
 
 const AdminHome = () => {
   return (

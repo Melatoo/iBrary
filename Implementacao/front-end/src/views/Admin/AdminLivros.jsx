@@ -1,5 +1,5 @@
-import Botao from "../components/Formulario/Botao";
-import BackgroundAdmin from "../components/Painel/BackgroundAdmin";
+import Botao from "../../components/Formulario/Botao";
+import BackgroundAdmin from "../../components/Painel/BackgroundAdmin";
 import "./AdminLivros.css";
 
 const AdminLivros = () => {
