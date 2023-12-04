@@ -1,7 +1,7 @@
 import React from "react";
 import IbraryLogo from "../IbraryLogo.jsx";
 import Botao from "./Botao.jsx";
-import "./navbaradmin.css";
+import "./navbar.css";
 
 const NavbarAdmin = () => {
   return (

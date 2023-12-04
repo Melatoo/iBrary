@@ -1,7 +1,7 @@
 import React from "react";
 import IbraryLogo from "../IbraryLogo.jsx";
 import Botao from "./Botao.jsx";
-import "./navbaradmin.css";
+import "./navbar.css";
 
 const NavbarAluno = () => {
   return (
@@ -11,9 +11,9 @@ const NavbarAluno = () => {
       </div>
 
       <div id="containerBotoes">
-        <Botao texto="Home" link="/admin/home" />
-        <Botao texto="Livros" link="/admin/livros" />
-        <Botao texto="Meus Empréstimos" link="/admin/emprestimos" />
+        <Botao texto="Home" link="/home" />
+        <Botao texto="Livros" link="livros" />
+        <Botao texto="Meus Empréstimos" link="/emprestimos" />
       </div>
     </nav>
   );

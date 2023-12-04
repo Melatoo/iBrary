@@ -1,10 +1,10 @@
 import Botao from "../components/Formulario/Botao";
-import Background from "../components/Painel/Background";
+import BackgroundAdmin from "../components/Painel/BackgroundAdmin";
 import "./AdminLivros.css";
 
 const AdminLivros = () => {
   return (
-    <Background>
+    <BackgroundAdmin>
       <div id="painelAdminLivros">
         <div id="painelAdminLivrosHeader">
           <h3>Lista de livros</h3>
@@ -12,7 +12,7 @@ const AdminLivros = () => {
         </div>
         <hr />
       </div>
-    </Background>
+    </BackgroundAdmin>
   );
 };
 
