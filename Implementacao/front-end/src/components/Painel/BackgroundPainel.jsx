@@ -1,7 +1,7 @@
 import BackgroundAdmin from "./BackgroundAdmin";
 import Botao from "../Formulario/Botao";
-import CardLivro from "../CardLivro";
 import "./BackgroundPainel.css";
+import PainelLivros from "./PainelLivros";
 
 const BackgroundPainel = ({ tipoLista, textoBotao, children }) => {
   return (
@@ -12,7 +12,7 @@ const BackgroundPainel = ({ tipoLista, textoBotao, children }) => {
           <Botao height="45px" texto={textoBotao} />
         </div>
         <hr id="hr" />
-        <div id="painelLivros">{children}</div>
+        <PainelLivros />
       </div>
     </BackgroundAdmin>
   );

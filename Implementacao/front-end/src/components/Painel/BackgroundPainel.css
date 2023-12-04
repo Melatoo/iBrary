@@ -22,10 +22,3 @@
   margin-top: 5px;
   margin-bottom: 10px;
 }
-
-#painelContainer {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  margin: 0 auto;
-}

@@ -1,14 +1,16 @@
-import "./CabecalhoLivros.css";
+import "./PainelLivros.css";
 
 const CabecalhoLivros = () => {
   return (
-    <div id="cabecalhoLivros">
-      <text id="textoCabecalho">Nome</text>
-      <text id="textoCabecalho">Editora</text>
-      <text id="textoCabecalho">Autor</text>
-      <text id="textoCabecalho">ID</text>
-      <text id="textoCabecalho">Data de cadastro</text>
-    </div>
+    <thead>
+      <tr>
+        <td>Nome</td>
+        <td>Editora</td>
+        <td>Autor</td>
+        <td>ID</td>
+        <td>Data de cadastro</td>
+      </tr>
+    </thead>
   );
 };
 
