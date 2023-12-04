@@ -7,6 +7,8 @@ import Cadastro from "./views/Cadastro.jsx";
 import AdminHome from "./views/Admin/AdminHome.jsx";
 import AlunoHome from "./views/Aluno/AlunoHome.jsx";
 import AdminLivros from "./views/Admin/AdminLivros.jsx";
+import AlunoLivros from "./views/Aluno/AlunoLivros.jsx";
+import AlunoEmprestimos from "./views/Aluno/AlunoEmprestimos.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,13 +24,21 @@ const router = createBrowserRouter([
     element: <AdminHome />,
   },
   {
+    path: "/admin/livros",
+    element: <AdminLivros />,
+  },
+  {
     path: "/home",
     element: <AlunoHome />,
   },
   {
-    path: "/admin/livros",
-    element: <AdminLivros />,
-  }
+    path: "/livros",
+    element: <AlunoLivros />,
+  },
+  {
+    path: "/emprestimos",
+    element: <AlunoEmprestimos />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

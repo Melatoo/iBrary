@@ -12,7 +12,7 @@ const NavbarAluno = () => {
 
       <div id="containerBotoes">
         <Botao texto="Home" link="/home" />
-        <Botao texto="Livros" link="livros" />
+        <Botao texto="Livros" link="/livros" />
         <Botao texto="Meus Empréstimos" link="/emprestimos" />
       </div>
     </nav>
