@@ -1,7 +1,7 @@
 import BackgroundAluno from "../../components/Painel/BackgroundAluno";
-import "./AlunoLivros.css";
+import "./Livros.css";
 
-const AlunoLivros = () => {
+const Livros = () => {
   return (
     <BackgroundAluno>
       <div id="painelLivros"></div>
@@ -9,4 +9,4 @@ const AlunoLivros = () => {
   );
 };
 
-export default AlunoLivros;
+export default Livros;

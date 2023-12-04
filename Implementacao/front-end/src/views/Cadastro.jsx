@@ -1,4 +1,4 @@
-import Background from "../components/Background";
+import Background from "../components/Formulario/Background";
 import IbraryLogo from "../components/IbraryLogo";
 import Titulo from "../components/Formulario/Titulo";
 import CampoTexto from "../components/Formulario/CampoTexto";

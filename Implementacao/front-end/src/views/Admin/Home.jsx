@@ -3,10 +3,10 @@ import livroimg from "../../assets/livro.png";
 import alunoimg from "../../assets/aluno.png";
 import emprestimoimg from "../../assets/emprestimo.png";
 import multaimg from "../../assets/multa.png";
-import "./AdminHome.css";
+import "./Home.css";
 import BackgroundAdmin from "../../components/Painel/BackgroundAdmin";
 
-const AdminHome = () => {
+const Home = () => {
   return (
     <BackgroundAdmin>
       <div id="painelAdmin">
@@ -19,4 +19,4 @@ const AdminHome = () => {
   );
 };
 
-export default AdminHome;
+export default Home;

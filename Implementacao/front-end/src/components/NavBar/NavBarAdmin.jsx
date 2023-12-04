@@ -11,7 +11,7 @@ const NavbarAdmin = () => {
       </div>
 
       <div id="containerBotoes">
-        <Botao texto="Home" link="/admin/home" />
+        <Botao texto="Home" link="/admin" />
         <Botao texto="Livros" link="/admin/livros" />
         <Botao texto="Alunos" link="/admin/alunos" />
         <Botao texto="Empréstimos" link="/admin/emprestimos" />

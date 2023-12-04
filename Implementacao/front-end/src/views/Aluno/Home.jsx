@@ -2,9 +2,9 @@ import BackgroundAluno from "../../components/Painel/BackgroundAluno";
 import Card from "../../components/Painel/Card";
 import livroimg from "../../assets/livro.png";
 import emprestimoimg from "../../assets/emprestimo.png";
-import "./AlunoHome.css";
+import "./Home.css";
 
-const AlunoHome = () => {
+const Home = () => {
   return (
     <BackgroundAluno>
       <div id="painelAluno">
@@ -15,4 +15,4 @@ const AlunoHome = () => {
   );
 };
 
-export default AlunoHome;
+export default Home;

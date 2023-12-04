@@ -1,0 +1,32 @@
+#painel {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+#painelHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  align-items: center;
+}
+
+#hr {
+  width: 100%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#painelContainer {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background-color: aqua;
+  margin-left: 50px;
+  margin-right: 50px;
+}

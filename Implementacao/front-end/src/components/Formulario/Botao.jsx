@@ -1,9 +1,9 @@
 import "./Botao.css";
 
-const Botao = ({ width, texto }) => {
+const Botao = ({ height, width, texto }) => {
   return (
     <input
-      style={{ width: width }}
+      style={{ height: height, width: width }}
       id="botaoFormulario"
       type="submit"
       value={texto}
