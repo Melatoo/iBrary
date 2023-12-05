@@ -1,4 +1,4 @@
-import BackgroundPainel from "../../components/Painel/Background/BackgroundPainel";
+import BackgroundPainel from "../../components/Painel/Background/BackgroundPainelAdminSemBotao";
 import "./MultasAtivas.css";
 
 const MultasAtivas = () => {
