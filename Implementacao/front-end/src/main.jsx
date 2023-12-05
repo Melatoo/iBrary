@@ -13,6 +13,7 @@ import AlunoHome from "./views/Aluno/Home.jsx";
 import AlunoLivros from "./views/Aluno/Livros.jsx";
 import AlunoEmprestimos from "./views/Aluno/Emprestimos.jsx";
 import AdicionarLivro from "./views/Admin/AdicionarLivro.jsx";
+import CadastrarEmprestimos from "./views/Admin/CadastrarEmprestimos.jsx";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: "/admin/livros/add",
     element: <AdicionarLivro />,
+  },
+  {
+    path: "/admin/emprestimos/cadastrar",
+    element: <CadastrarEmprestimos />,
   },
 ]);
 
