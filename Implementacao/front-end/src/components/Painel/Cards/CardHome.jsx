@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import "./Card.css";
+import "./CardHome.css";
 
-const Card = ({ cor, texto, imagem, link }) => {
+const CardHome = ({ cor, texto, imagem, link }) => {
   return (
     <div className="cardContainer">
       <Link to={link} style={{ backgroundColor: cor }} id="card">
@@ -12,4 +12,4 @@ const Card = ({ cor, texto, imagem, link }) => {
   );
 };
 
-export default Card;
+export default CardHome;
