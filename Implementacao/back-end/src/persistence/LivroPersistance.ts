@@ -1,7 +1,12 @@
-import { prisma } from "@/database";
+import { prisma } from "../database";
 
 const getLivros = async () => {
   return await prisma.livro.findMany();
 };
 
-export default { getLivros };
+const getById = async (id: number) => {
+  const livro = await prisma.livro.findUnique({ where: { id } });
+  return livro;
+};
+
+export default { getLivros, getById };
