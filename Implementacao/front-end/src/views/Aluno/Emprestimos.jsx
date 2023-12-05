@@ -1,4 +1,4 @@
-import BackgroundPainel from "../../components/Painel/Background/BackgroundPainelAluno";
+import BackgroundPainel from "../../components/Painel/Background/PainelAluno";
 import "./Emprestimos.css";
 
 const Emprestimos = () => {

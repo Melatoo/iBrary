@@ -1,5 +1,5 @@
-import BackgroundAluno from "../../components/Painel/Background/BackgroundAluno";
-import CardHome from "../../components/Painel/Cards/CardHome";
+import BackgroundAluno from "../../components/Painel/Background/Aluno";
+import CardHome from "../../components/Painel/Cards/Home";
 import livroimg from "../../assets/livro.png";
 import emprestimoimg from "../../assets/emprestimo.png";
 import "./Home.css";

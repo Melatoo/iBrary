@@ -3,7 +3,6 @@ import CampoTexto from "../../components/Formulario/CampoTexto";
 import Botao from "../../components/Formulario/Botao";
 import Titulo from "../../components/Formulario/Titulo";
 import IbraryLogo from "../../components/IbraryLogo";
-import "./AdicionarLivro.css";
 
 const AdicionarLivro = () => {
   return (

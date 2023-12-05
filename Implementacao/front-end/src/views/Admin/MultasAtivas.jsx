@@ -1,5 +1,4 @@
-import BackgroundPainel from "../../components/Painel/Background/BackgroundPainelAdminSemBotao";
-import "./MultasAtivas.css";
+import BackgroundPainel from "../../components/Painel/Background/PainelAdminSemBotao";
 
 const MultasAtivas = () => {
   return <BackgroundPainel tipoLista="multas"></BackgroundPainel>;

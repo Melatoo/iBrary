@@ -1,4 +1,4 @@
-import BackgroundAluno from "./BackgroundAluno";
+import BackgroundAluno from "./Aluno";
 import BarraDePesquisa from "../BarraDePesquisa";
 
 const BackgroundPainelAluno = ({ tipoLista, children }) => {

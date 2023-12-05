@@ -1,5 +1,5 @@
 import "./Background.css";
-import NavbarAluno from "../../NavBar/NavBarAluno";
+import NavbarAluno from "../../NavBar/Aluno";
 
 const BackgroundAluno = ({ children }) => {
   return (

@@ -1,11 +1,9 @@
-import BackgroundAdmin from "./BackgroundAdmin";
-import Botao from "../../Formulario/Botao";
+import BackgroundAdmin from "./Admin";
 import BarraDePesquisa from "../BarraDePesquisa";
-import "./BackgroundPainel.css";
+import "./PainelAdmin.css";
 
-const BackgroundPainelAdmin = ({
+const BackgroundPainelAdminSemBotao = ({
   tipoLista,
-  textoBotao,
   children,
   onClickBotaoAdd,
 }) => {
@@ -15,7 +13,6 @@ const BackgroundPainelAdmin = ({
         <BarraDePesquisa placeholder="Pesquisar..." />
         <div id="painelHeader">
           <h3>Lista de {tipoLista}</h3>
-          <Botao height="45px" texto={textoBotao} onClick={onClickBotaoAdd} />
         </div>
         <hr id="hr" />
         {children}
@@ -24,4 +21,4 @@ const BackgroundPainelAdmin = ({
   );
 };
 
-export default BackgroundPainelAdmin;
+export default BackgroundPainelAdminSemBotao;
