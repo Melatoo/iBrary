@@ -1,5 +1,5 @@
 import CardEmprestimo from "./Cards/Emprestimo";
-import CabecalhoEmprestimos from "./CabecalhoEmprestimosAdmin";
+import CabecalhoEmprestimos from "./CabecalhoEmprestimos";
 
 const PainelEmprestimosAdmin = () => {
   return (
