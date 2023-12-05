@@ -6,7 +6,11 @@ import "./Livros.css";
 
 const Livros = () => {
   return (
-    <BackgroundPainel tipoLista="livros" textoBotao="Adicionar novo livro">
+    <BackgroundPainel
+      tipoLista="livros"
+      textoBotao="Adicionar novo livro"
+      onClickBotaoAdd={() => {}}
+    >
       <PainelLivros />
     </BackgroundPainel>
   );
