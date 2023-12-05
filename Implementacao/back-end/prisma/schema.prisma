@@ -13,7 +13,8 @@ datasource db {
 model Usuario {
   id  Int @id @default(autoincrement())
   email String @unique
-  name String
+  senha String
+  nome String
   matricula String? @unique
   admin Boolean @default(false)
   emprestimos Emprestimo[]

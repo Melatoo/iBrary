@@ -1,10 +1,12 @@
 import { NextFunction, Request, Response, Router } from "express";
 import { livroController } from "./controllers/LivroController";
 import { AppError } from "./errors/AppError";
+import { usuarioController } from "./controllers/UsuarioController";
 
 const router = Router();
 
 router.use("/admin/livros", livroController);
+router.use("/admin/alunos", usuarioController);
 router.use(
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   (err: Error, request: Request, response: Response, _next: NextFunction) => {

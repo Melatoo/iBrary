@@ -1,4 +1,3 @@
-import { AppError } from "../errors/AppError";
 import LivroServices from "../services/LivroServices";
 import { Router } from "express";
 const router = Router();
