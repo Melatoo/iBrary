@@ -1,5 +1,18 @@
 import CardEmprestimo from "./Cards/Emprestimo";
-import CabecalhoEmprestimos from "./CabecalhoEmprestimos";
+
+const CabecalhoEmprestimos = () => {
+  return (
+    <thead>
+      <tr>
+        <td>ID Livro</td>
+        <td>Matrícula</td>
+        <td>Duração (semanas)</td>
+        <td>Data de início</td>
+        <td />
+      </tr>
+    </thead>
+  );
+};
 
 const PainelEmprestimosAdmin = () => {
   return (

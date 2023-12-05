@@ -1,5 +1,17 @@
 import CardAluno from "./Cards/Aluno";
-import CabecalhoAlunos from "./CabecalhoAlunos";
+
+const CabecalhoAlunos = () => {
+  return (
+    <thead>
+      <tr>
+        <td>Nome</td>
+        <td>Email</td>
+        <td>Matricula</td>
+        <td>Data de cadastro</td>
+      </tr>
+    </thead>
+  );
+};
 
 const PainelAlunos = () => {
   return (

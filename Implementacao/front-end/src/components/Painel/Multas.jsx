@@ -1,5 +1,17 @@
 import CardMulta from "./Cards/Multa";
-import CabecalhoMultas from "./CabecalhoMultas";
+
+const CabecalhoMultas = () => {
+  return (
+    <thead>
+      <tr>
+        <td>ID Livro</td>
+        <td>Matrícula</td>
+        <td>Valor (em reais)</td>
+        <td />
+      </tr>
+    </thead>
+  );
+};
 
 const PainelMultas = () => {
   return (

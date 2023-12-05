@@ -1,11 +1,25 @@
 import CardEmprestimoAluno from "./Cards/EmprestimoAluno";
-import CabecalhoEmprestimosAluno from "./CabecalhoEmprestimosAluno";
+
+const CabecalhoAlunos = () => {
+  return (
+    <thead>
+      <tr>
+        <td>Nome</td>
+        <td>Matrícula</td>
+        <td>Autor</td>
+        <td>Data de empréstimo</td>
+        <td>Data de devolução</td>
+        <td />
+      </tr>
+    </thead>
+  );
+};
 
 const PainelEmprestimosAluno = () => {
   return (
     <div id="tabela">
       <table>
-        <CabecalhoEmprestimosAluno />
+        <CabecalhoAlunos />
         <tbody>
           <CardEmprestimoAluno
             titulo="O alquimista"
