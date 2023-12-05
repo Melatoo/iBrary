@@ -1,4 +1,4 @@
-import BackgroundPainel from "../../components/Painel/BackgroundPainelAdmin";
+import BackgroundPainel from "../../components/Painel/Background/BackgroundPainel";
 import PainelLivros from "../../components/Painel/PainelLivros";
 import "./Livros.css";
 

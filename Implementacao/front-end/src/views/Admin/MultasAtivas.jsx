@@ -1,4 +1,4 @@
-import BackgroundPainel from "../../components/Painel/BackgroundPainelAluno";
+import BackgroundPainel from "../../components/Painel/Background/BackgroundPainel";
 import "./MultasAtivas.css";
 
 const MultasAtivas = () => {

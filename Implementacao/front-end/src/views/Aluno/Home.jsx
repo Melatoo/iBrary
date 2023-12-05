@@ -1,5 +1,5 @@
-import BackgroundAluno from "../../components/Painel/BackgroundAluno";
-import Card from "../../components/Painel/Card";
+import BackgroundAluno from "../../components/Painel/Background/BackgroundAluno";
+import Card from "../../components/Painel/Cards/CardHome";
 import livroimg from "../../assets/livro.png";
 import emprestimoimg from "../../assets/emprestimo.png";
 import "./Home.css";
@@ -8,8 +8,12 @@ const Home = () => {
   return (
     <BackgroundAluno>
       <div id="painelAluno">
-        <Card cor="#FFD4EF" texto="Livros" imagem={livroimg} />
-        <Card cor="#FFF6CA" texto="Meus Empréstimos" imagem={emprestimoimg} />
+        <CardHome cor="#FFD4EF" texto="Livros" imagem={livroimg} />
+        <CardHome
+          cor="#FFF6CA"
+          texto="Meus Empréstimos"
+          imagem={emprestimoimg}
+        />
       </div>
     </BackgroundAluno>
   );
