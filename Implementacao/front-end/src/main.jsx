@@ -12,6 +12,7 @@ import MultasAtivas from "./views/Admin/MultasAtivas.jsx";
 import AlunoHome from "./views/Aluno/Home.jsx";
 import AlunoLivros from "./views/Aluno/Livros.jsx";
 import AlunoEmprestimos from "./views/Aluno/Emprestimos.jsx";
+import AdicionarLivro from "./views/Admin/AdicionarLivro.jsx";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: "/emprestimos",
     element: <AlunoEmprestimos />,
+  },
+  {
+    path: "/admin/livros/add",
+    element: <AdicionarLivro />,
   },
 ]);
 
