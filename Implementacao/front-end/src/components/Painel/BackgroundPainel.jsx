@@ -12,7 +12,7 @@ const BackgroundPainel = ({ tipoLista, textoBotao, children }) => {
           <Botao height="45px" texto={textoBotao} />
         </div>
         <hr id="hr" />
-        <PainelLivros />
+        {children}
       </div>
     </BackgroundAdmin>
   );
