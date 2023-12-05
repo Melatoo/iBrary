@@ -9,6 +9,7 @@ const CabecalhoLivros = () => {
         <td>Autor</td>
         <td>ID</td>
         <td>Data de cadastro</td>
+        <td>Quantidade</td>
         <td />
       </tr>
     </thead>
@@ -27,6 +28,7 @@ const PainelLivros = () => {
             editora="HarperCollins"
             id="1"
             titulo="O Pequeno Príncipe"
+            quantidade="10"
           />
           <CardLivroAdmin
             autor="Antoine deaaa Saint-Exupéry"
@@ -34,6 +36,7 @@ const PainelLivros = () => {
             editora="HarperCollins"
             id="1"
             titulo="O Pequeno Príncipe"
+            quantidade="10"
           />
         </tbody>
       </table>

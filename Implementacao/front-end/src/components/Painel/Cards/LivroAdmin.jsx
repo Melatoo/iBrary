@@ -5,7 +5,7 @@ import imagemEmprestimo from "../../../assets/emprestimo.png";
 import imagemEditar from "../../../assets/pen.png";
 import imagemExcluir from "../../../assets/trash.png";
 
-const CardLivroAdmin = ({ titulo, editora, autor, id, data }) => {
+const CardLivroAdmin = ({ titulo, editora, autor, id, data, quantidade }) => {
   return (
     <tr>
       <td>{titulo}</td>
@@ -13,6 +13,7 @@ const CardLivroAdmin = ({ titulo, editora, autor, id, data }) => {
       <td>{autor}</td>
       <td>{id}</td>
       <td>{data}</td>
+      <td>{quantidade}</td>
       <td>
         <BotaoImagem
           link="/admin"
