@@ -12,7 +12,7 @@ router.post("/add", async (req, res) => {
     nome: req.body.nome,
     editora: req.body.editora,
     autor: req.body.autor,
-    quantidade: req.body.quantidade,
+    quantidade: Number(req.body.quantidade),
   };
   res.send(await LivroServices.createLivro(dadosLivro));
 });

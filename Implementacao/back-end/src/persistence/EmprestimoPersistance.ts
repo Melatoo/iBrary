@@ -28,7 +28,6 @@ const createEmprestimo = async (emprestimo: EmprestimoType) => {
         },
       },
       dataDevolucao: dataDev,
-
     },
   });
 };
