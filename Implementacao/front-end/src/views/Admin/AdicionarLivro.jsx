@@ -28,6 +28,11 @@ const AdicionarLivro = () => {
             placeholder="Digite o nome do autor"
             name="autor"
           />
+          <CampoTexto
+            label="Quantidade"
+            placeholder="Digite a quantidade de livros disponíveis"
+            name="quantidade"
+          />
           <div id="botaoContainer">
             <Botao width="85%" texto="Adicionar" />
           </div>
