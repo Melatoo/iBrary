@@ -1,4 +1,4 @@
-import "../PainelLivros.css";
+import "../Painel.css";
 
 const CardLivro = ({ titulo, editora, autor, id, data }) => {
   return (

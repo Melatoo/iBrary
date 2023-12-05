@@ -1,5 +1,5 @@
 import BotaoImagem from "../BotaoImagem";
-import "../PainelLivros.css";
+import "../Painel.css";
 import imagemMulta from "../../../assets/borrow.png";
 import imagemEmprestimo from "../../../assets/emprestimo.png";
 import imagemEditar from "../../../assets/pen.png";
