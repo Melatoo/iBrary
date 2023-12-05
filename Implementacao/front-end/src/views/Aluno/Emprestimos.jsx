@@ -1,12 +1,8 @@
-import BackgroundAluno from "../../components/Painel/BackgroundAluno";
+import BackgroundPainel from "../../components/Painel/BackgroundPainelAluno";
 import "./Emprestimos.css";
 
 const Emprestimos = () => {
-  return (
-    <BackgroundAluno>
-      <div id="painelLivros"></div>
-    </BackgroundAluno>
-  );
+  return <BackgroundPainel tipoLista="empréstimos"></BackgroundPainel>;
 };
 
 export default Emprestimos;
