@@ -11,37 +11,39 @@ datasource db {
 }
 
 model Usuario {
-  id  Int @id @default(autoincrement())
-  email String @unique
-  senha String
-  nome String
-  matricula String? @unique
-  admin Boolean @default(false)
+  id          Int          @id @default(autoincrement())
+  email       String       @unique
+  senha       String
+  nome        String
+  matricula   String?      @unique
+  admin       Boolean      @default(false)
   emprestimos Emprestimo[]
 }
 
 model Livro {
-  id Int @id @default(autoincrement())
-  nome String
-  editora String
-  autor String
-  dataCadastro DateTime @default(now())
-  quantidade Int
-  emprestimos Emprestimo[]
+  id           Int          @id @default(autoincrement())
+  nome         String
+  editora      String
+  autor        String
+  dataCadastro DateTime     @default(now())
+  quantidade   Int
+  emprestimos  Emprestimo[]
 }
 
 model Emprestimo {
-  id Int @id @default(autoincrement())
-  aluno Usuario @relation(fields: [idAluno], references: [id])
-  idAluno Int
-  livro Livro @relation(fields: [idLivro], references: [id])
-  idLivro Int
-  multa Multa?
+  id             Int      @id @default(autoincrement())
+  aluno          Usuario  @relation(fields: [idAluno], references: [id])
+  idAluno        Int
+  livro          Livro    @relation(fields: [idLivro], references: [id])
+  idLivro        Int
+  dataEmprestimo DateTime @default(now())
+  dataDevolucao  DateTime
+  multa          Multa?
 }
 
-model Multa{
-  id Int @id @default(autoincrement())
-  valor Float
-  emprestimo Emprestimo @relation(fields: [idEmprestimo], references: [id])
-  idEmprestimo Int @unique
+model Multa {
+  id           Int        @id @default(autoincrement())
+  valor        Float
+  emprestimo   Emprestimo @relation(fields: [idEmprestimo], references: [id])
+  idEmprestimo Int        @unique
 }
