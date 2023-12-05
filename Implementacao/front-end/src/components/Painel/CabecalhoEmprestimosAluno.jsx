@@ -4,11 +4,11 @@ const CabecalhoAlunos = () => {
   return (
     <thead>
       <tr>
-        <td>Titulo</td>
+        <td>Nome</td>
         <td>Matrícula</td>
-        <td>Duração (semanas)</td>
-        <td>Data de início</td>
-        <td>Data de Devolução</td>
+        <td>Autor</td>
+        <td>Data de empréstimo</td>
+        <td>Data de devolução</td>
         <td />
       </tr>
     </thead>

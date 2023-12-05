@@ -1,6 +1,6 @@
 import "./Painel.css";
 
-const CabecalhoLivrosAluno = () => {
+const   CabecalhoLivrosAluno = () => {
   return (
     <thead>
       <tr>

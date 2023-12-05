@@ -8,8 +8,14 @@ const Home = () => {
   return (
     <BackgroundAluno>
       <div id="painelAluno">
-        <CardHome cor="#FFD4EF" texto="Livros" imagem={livroimg} />
         <CardHome
+          link="/livros"
+          cor="#FFD4EF"
+          texto="Livros"
+          imagem={livroimg}
+        />
+        <CardHome
+          link="/emprestimos" 
           cor="#FFF6CA"
           texto="Meus Empréstimos"
           imagem={emprestimoimg}
