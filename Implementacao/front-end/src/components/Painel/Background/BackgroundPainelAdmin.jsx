@@ -1,7 +1,7 @@
 import BackgroundAdmin from "./BackgroundAdmin";
 import Botao from "../../Formulario/Botao";
 import BarraDePesquisa from "../BarraDePesquisa";
-import "./BackgroundPainel.css";
+import "./BackgroundPainelAdmin.css";
 
 const BackgroundPainelAdmin = ({
   tipoLista,

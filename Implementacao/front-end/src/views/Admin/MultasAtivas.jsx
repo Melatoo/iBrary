@@ -2,12 +2,7 @@ import BackgroundPainel from "../../components/Painel/Background/BackgroundPaine
 import "./MultasAtivas.css";
 
 const MultasAtivas = () => {
-  return (
-    <BackgroundPainel
-      tipoLista="multas"
-      textoBotao="Adicionar nova multa"
-    ></BackgroundPainel>
-  );
+  return <BackgroundPainel tipoLista="multas"></BackgroundPainel>;
 };
 
 export default MultasAtivas;
