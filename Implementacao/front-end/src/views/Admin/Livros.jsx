@@ -1,3 +1,4 @@
+import { redirect, redirectDocument } from "react-router-dom";
 import BackgroundPainel from "../../components/Painel/Background/PainelAdmin";
 import PainelLivros from "../../components/Painel/PainelLivros";
 
@@ -6,7 +7,7 @@ const Livros = () => {
     <BackgroundPainel
       tipoLista="livros"
       textoBotao="Adicionar novo livro"
-      onClickBotaoAdd={() => {}}
+      path="/admin/livros/add"
     >
       <PainelLivros />
     </BackgroundPainel>
