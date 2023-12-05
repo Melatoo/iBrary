@@ -7,14 +7,14 @@ table {
 thead td {
   width: 15%;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 0.8em;
   color: #acacac;
   text-align: center;
   padding-bottom: 10px;
 }
 
 tbody tr {
-  height: 85px;
+  height: 50px;
   background-color: #fff;
   border-color: #acacac;
   border-style: solid;
@@ -23,13 +23,15 @@ tbody tr {
 
 tbody td {
   width: 15%;
+  font-size: 0.8em;
   text-align: center;
-}
-tbody td:nth-child(6) {
-  height: 30px;
 }
 
 #tabela {
   display: flex;
   justify-content: center;
+}
+
+#fiveRows {
+  width: 30%;
 }

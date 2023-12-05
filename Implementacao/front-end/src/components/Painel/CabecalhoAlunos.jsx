@@ -1,18 +1,16 @@
 import "./Painel.css";
 
-const CabecalhoLivros = () => {
+const CabecalhoAlunos = () => {
   return (
     <thead>
       <tr>
         <td>Nome</td>
-        <td>Editora</td>
-        <td>Autor</td>
-        <td>ID</td>
+        <td>Email</td>
+        <td>Matricula</td>
         <td>Data de cadastro</td>
-        <td />
       </tr>
     </thead>
   );
 };
 
-export default CabecalhoLivros;
+export default CabecalhoAlunos;

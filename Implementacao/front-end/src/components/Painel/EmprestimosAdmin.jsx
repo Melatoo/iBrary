@@ -1,19 +1,19 @@
-import CardAluno from "./Cards/Aluno";
-import CabecalhoAlunos from "./CabecalhoAlunos";
+import CardEmprestimo from "./Cards/Emprestimo";
+import CabecalhoEmprestimos from "./CabecalhoEmprestimosAdmin";
 
-const PainelAlunos = () => {
+const PainelEmprestimosAdmin = () => {
   return (
     <div id="tabela">
       <table>
-        <CabecalhoAlunos />
+        <CabecalhoEmprestimos />
         <tbody>
-          <CardAluno
-            nome="Thiago Melato"
-            email="thiago.fonseca@compjunior"
+          <CardEmprestimo
+            idLivro="0"
             matricula="202210077"
+            duracao="4"
             data="2023-20-10"
           />
-          <CardAluno
+          <CardEmprestimo
             nome="Thiago Melato"
             email="thiago.fonseca@compjunior"
             matricula="202210077"
@@ -25,4 +25,4 @@ const PainelAlunos = () => {
   );
 };
 
-export default PainelAlunos;
+export default PainelEmprestimosAdmin;
