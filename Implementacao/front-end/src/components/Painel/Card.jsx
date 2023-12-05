@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 import "./Card.css";
 
-const Card = ({ cor, texto, imagem }) => {
+const Card = ({ cor, texto, imagem, link }) => {
   return (
     <div className="cardContainer">
-      <div style={{ backgroundColor: cor }} id="card">
+      <Link to={link} style={{ backgroundColor: cor }} id="card">
         <img src={imagem} id="imagem" />
         <h4 id="textoCard">{texto}</h4>
-      </div>
+      </Link>
     </div>
   );
 };

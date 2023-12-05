@@ -1,0 +1,16 @@
+#botaoImagem {
+  cursor: pointer;
+  border: none;
+  margin-left: 5px;
+}
+
+#botatoImagem:hover {
+  background-color: #feaf00;
+}
+
+#imagemBotao {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  float: rigth;
+}

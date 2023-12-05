@@ -1,4 +1,4 @@
-import CardLivro from "../CardLivro";
+import CardLivroAdmin from "../CardLivroAdmin";
 import CabecalhoLivros from "./CabecalhoLivros";
 
 const PainelLivros = () => {
@@ -7,14 +7,14 @@ const PainelLivros = () => {
       <table>
         <CabecalhoLivros />
         <tbody>
-          <CardLivro
+          <CardLivroAdmin
             autor="Antoine deaaa Saint-Exupéry"
             data="2023-20-10"
             editora="HarperCollins"
             id="1"
             titulo="O Pequeno Príncipe"
           />
-          <CardLivro
+          <CardLivroAdmin
             autor="Antoine deaaa Saint-Exupéry"
             data="2023-20-10"
             editora="HarperCollins"
