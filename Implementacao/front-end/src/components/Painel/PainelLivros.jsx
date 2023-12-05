@@ -1,4 +1,4 @@
-import CardLivroAdmin from "../CardLivroAdmin";
+import CardLivroAdmin from "./CardLivroAdmin";
 import CabecalhoLivros from "./CabecalhoLivros";
 
 const PainelLivros = () => {

@@ -1,5 +1,4 @@
 import "./BarraDePesquisa.css";
-import Lupa from "../assets/loupe.png";
 
 const BarraDePesquisa = ({ placeholder, onChange }) => {
   return (

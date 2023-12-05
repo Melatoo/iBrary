@@ -1,9 +1,9 @@
 import BotaoImagem from "./BotaoImagem";
-import "./Painel/PainelLivros.css";
-import imagemMulta from "../assets/borrow.png";
-import imagemEmprestimo from "../assets/emprestimo.png";
-import imagemEditar from "../assets/pen.png";
-import imagemExcluir from "../assets/trash.png";
+import "./PainelLivros.css";
+import imagemMulta from "../../assets/borrow.png";
+import imagemEmprestimo from "../../assets/emprestimo.png";
+import imagemEditar from "../../assets/pen.png";
+import imagemExcluir from "../../assets/trash.png";
 
 const CardLivroAdmin = ({ titulo, editora, autor, id, data }) => {
   return (
