@@ -8,6 +8,7 @@ import axios from "../../../services/axios";
 import { useNavigate } from "react-router-dom";
 
 const CardLivroAdmin = ({ titulo, editora, autor, id, data, quantidade }) => {
+  const navigate = useNavigate();
   const deleteLivro = (id) => {
     axios
       .delete(`/admin/livros/delete/${id}`)
@@ -19,10 +20,9 @@ const CardLivroAdmin = ({ titulo, editora, autor, id, data, quantidade }) => {
   };
 
   const updateLivro = (id) => {
-    navigate(`/admin/livros/update/${id}`, { state: { key: id.toString() } });
+    navigate(`/admin/livros/update/${id}`);
   };
 
-  const navigate = useNavigate();
   return (
     <tr>
       <td>{titulo}</td>
