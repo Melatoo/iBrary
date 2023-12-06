@@ -1,4 +1,7 @@
 import CardAluno from "./Cards/Aluno";
+import axios from "../../services/axios";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const CabecalhoAlunos = () => {
   return (
@@ -14,23 +17,34 @@ const CabecalhoAlunos = () => {
 };
 
 const PainelAlunos = () => {
+  const [alunos, setAlunos] = useState([]);
+  useEffect(() => {
+    axios
+      .get("/admin/alunos")
+      .then((response) => {
+        setAlunos(response.data);
+        console.log(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   return (
     <div id="tabela">
       <table>
         <CabecalhoAlunos />
         <tbody>
-          <CardAluno
-            nome="Thiago Melato"
-            email="thiago.fonseca@compjunior"
-            matricula="202210077"
-            data="2023-20-10"
-          />
-          <CardAluno
-            nome="Thiago Melato"
-            email="thiago.fonseca@compjunior"
-            matricula="202210077"
-            data="2023-20-10"
-          />
+          {alunos.map((aluno) => {
+            return (
+              <CardAluno
+                nome={aluno.nome}
+                email={aluno.email}
+                matricula={aluno.matricula}
+                // data={aluno.dataCadastro}
+                key={aluno.id}
+              />
+            );
+          })}
         </tbody>
       </table>
     </div>
