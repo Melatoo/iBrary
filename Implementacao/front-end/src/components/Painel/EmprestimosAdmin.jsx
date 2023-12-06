@@ -6,9 +6,9 @@ const CabecalhoEmprestimos = () => {
       <tr>
         <td>ID</td>
         <td>ID Livro</td>
-        <td>Matrícula</td>
-        <td>Duração (semanas)</td>
+        <td>ID Aluno</td>
         <td>Data de início</td>
+        <td>Data de devolução</td>
         <td />
       </tr>
     </thead>

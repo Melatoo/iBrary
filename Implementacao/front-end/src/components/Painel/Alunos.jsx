@@ -7,6 +7,7 @@ const CabecalhoAlunos = () => {
   return (
     <thead>
       <tr>
+        <td>ID</td>
         <td>Nome</td>
         <td>Email</td>
         <td>Matricula</td>
