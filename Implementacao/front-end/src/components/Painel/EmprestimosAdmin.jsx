@@ -37,6 +37,7 @@ const PainelEmprestimosAdmin = () => {
         <tbody>
           {emprestimos.map((emprestimo) => (
             <CardEmprestimo
+              key={emprestimo.id}
               id={emprestimo.id}
               idLivro={emprestimo.idLivro}
               idAluno={emprestimo.idAluno}
