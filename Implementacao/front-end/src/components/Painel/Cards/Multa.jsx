@@ -3,7 +3,7 @@ import BotaoImagem from "../BotaoImagem";
 import imagemDelete from "../../../assets/trash.png";
 import imagemEdit from "../../../assets/pen.png";
 
-const CardMulta = ({ id, idLivro, idAluno, valor }) => {
+const CardMulta = ({ id, idEmprestimo, valor }) => {
   const deleteMulta = (id) => {
     axios
       .delete(`/admin/multas/delete/${id}`)
@@ -16,8 +16,7 @@ const CardMulta = ({ id, idLivro, idAluno, valor }) => {
   return (
     <tr>
       <td>{id}</td>
-      <td>{idLivro}</td>
-      <td>{idAluno}</td>
+      <td>{idEmprestimo}</td>
       <td>{valor}</td>
       <td>
         <BotaoImagem src={imagemEdit} />

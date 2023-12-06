@@ -5,8 +5,7 @@ const CabecalhoMultas = () => {
     <thead>
       <tr>
         <td>ID</td>
-        <td>ID Livro</td>
-        <td>ID Aluno</td>
+        <td>ID Emprestimo</td>
         <td>Valor (em reais)</td>
         <td />
       </tr>
