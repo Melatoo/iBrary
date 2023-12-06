@@ -2,6 +2,7 @@ import LivroServices from "../services/LivroServices";
 import { Router } from "express";
 const router = Router();
 
+// *
 router.get("/", async (req, res) => {
   const livros = await LivroServices.getLivros();
   res.json(livros);
@@ -22,7 +23,7 @@ router.patch("/update/:id", async (req, res) => {
     nome: req.body.nome,
     editora: req.body.editora,
     autor: req.body.autor,
-    quantidade: req.body.quantidade,
+    quantidade: Number(req.body.quantidade),
   };
   res.send(await LivroServices.updateLivro(Number(req.params.id), dadosLivro));
 });

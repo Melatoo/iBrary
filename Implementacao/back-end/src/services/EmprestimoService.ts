@@ -4,15 +4,15 @@ const getEmprestimos = async () => {
   return await EmprestimoPersistance.getEmprestimos();
 };
 
-const getEmprestimosById = async (id: number) => {
-  return await EmprestimoPersistance.getEmprestimosById(id);
+const getEmprestimoById = async (id: number) => {
+  return await EmprestimoPersistance.getEmprestimoById(id);
 };
 
 const createEmprestimo = async (emprestimo: EmprestimoType) => {
   return await EmprestimoPersistance.createEmprestimo(emprestimo);
 };
 
-const updateEmprestimo = async (id: number, emprestimo: EmprestimoType) => {
+const updateEmprestimo = async (id: number, emprestimo: any) => {
   return await EmprestimoPersistance.updateEmprestimo(id, emprestimo);
 };
 
@@ -25,5 +25,5 @@ export default {
   createEmprestimo,
   updateEmprestimo,
   deleteEmprestimo,
-  getEmprestimosById,
+  getEmprestimoById,
 };

@@ -4,7 +4,7 @@ const getEmprestimos = async () => {
   return await prisma.emprestimo.findMany();
 };
 
-const getEmprestimosById = async (id: number) => {
+const getEmprestimoById = async (id: number) => {
   return await prisma.emprestimo.findUnique({ where: { id } });
 };
 
@@ -45,7 +45,7 @@ const updateEmprestimo = async (id: number, emprestimo: any) => {
 
 export default {
   getEmprestimos,
-  getEmprestimosById,
+  getEmprestimoById,
   createEmprestimo,
   deleteEmprestimo,
   updateEmprestimo,

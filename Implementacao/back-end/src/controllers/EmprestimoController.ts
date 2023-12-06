@@ -1,14 +1,14 @@
-import EmprestimoPersistance from "../persistence/EmprestimoPersistance";
+import EmprestimoService from "../services/EmprestimoService";
 import { Router } from "express";
 const router = Router();
 
 router.get("/", async (req, res) => {
-  const emprestimos = await EmprestimoPersistance.getEmprestimos();
+  const emprestimos = await EmprestimoService.getEmprestimos();
   res.json(emprestimos);
 });
 
 router.get("/:id", async (req, res) => {
-  const emprestimos = await EmprestimoPersistance.getEmprestimosById(
+  const emprestimos = await EmprestimoService.getEmprestimoById(
     Number(req.params.id)
   );
   res.json(emprestimos);
@@ -19,7 +19,7 @@ router.post("/add", async (req, res) => {
     idLivro: req.body.idLivro,
     idAluno: req.body.idAluno,
   };
-  res.send(await EmprestimoPersistance.createEmprestimo(dadosEmprestimo));
+  res.send(await EmprestimoService.createEmprestimo(dadosEmprestimo));
 });
 
 router.patch("/update/:id", async (req, res) => {
@@ -29,7 +29,7 @@ router.patch("/update/:id", async (req, res) => {
     usuarioId: req.body.usuarioId,
   };
   res.send(
-    await EmprestimoPersistance.updateEmprestimo(
+    await EmprestimoService.updateEmprestimo(
       Number(req.params.id),
       dadosEmprestimo
     )
@@ -37,7 +37,7 @@ router.patch("/update/:id", async (req, res) => {
 });
 
 router.delete("/delete/:id", async (req, res) => {
-  res.send(await EmprestimoPersistance.deleteEmprestimo(Number(req.params.id)));
+  res.send(await EmprestimoService.deleteEmprestimo(Number(req.params.id)));
 });
 
 export { router as emprestimoController };

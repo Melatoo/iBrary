@@ -4,9 +4,13 @@ import { AppError } from "./errors/AppError";
 import { usuarioController } from "./controllers/UsuarioController";
 import { emprestimoController } from "./controllers/EmprestimoController";
 import { multaController } from "./controllers/MultaController";
+import { livroUsuarioController } from "./controllers/LivroUsuarioController";
+import { multasUsuarioController } from "./controllers/MultasUsuarioController";
 
 const router = Router();
 
+router.use("/", livroUsuarioController);
+router.use("/emprestimos", multasUsuarioController);
 router.use("/admin/livros", livroController);
 router.use("/admin/alunos", usuarioController);
 
