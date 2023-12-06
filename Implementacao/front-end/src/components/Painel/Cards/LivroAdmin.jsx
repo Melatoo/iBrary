@@ -14,7 +14,7 @@ const CardLivroAdmin = ({ titulo, editora, autor, id, data, quantidade }) => {
       .delete(`/admin/livros/delete/${id}`)
       .then((response) => {
         console.log(response);
-        navigate("/admin/livros");
+        window.location.reload();
       })
       .catch((err) => console.log(err));
   };
