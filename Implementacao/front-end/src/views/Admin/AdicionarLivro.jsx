@@ -12,7 +12,8 @@ const AdicionarLivro = () => {
   const [nome, setNome] = useState("");
   const [editora, setEditora] = useState("");
   const [autor, setAutor] = useState("");
-  const [quantidade, setQuantidade] = useState(0);
+  const [quantidade, setQuantidade] = useState(null);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const livro = {
@@ -30,6 +31,7 @@ const AdicionarLivro = () => {
       })
       .catch((err) => console.log(err));
   };
+
   return (
     <Background>
       <div id="container">

@@ -5,10 +5,11 @@ import Titulo from "../../components/Formulario/Titulo";
 import IbraryLogo from "../../components/IbraryLogo";
 import axios from "../../services/axios";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const EditarLivro = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [nome, setNome] = useState("");
   const [editora, setEditora] = useState("");
   const [autor, setAutor] = useState("");
@@ -32,7 +33,9 @@ const EditarLivro = () => {
       })
       .catch((err) => console.log(err));
   };
+
   useEffect(() => {
+    const id = location.pathname.split("/")[4];
     axios
       .get(`/admin/livros/${id}`)
       .then((response) => {
@@ -43,6 +46,7 @@ const EditarLivro = () => {
         console.log("Erro ao buscar livro");
       });
   }, []);
+
   return (
     <Background>
       <div id="container">

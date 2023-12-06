@@ -12,7 +12,7 @@ const CampoTexto = ({ label, placeholder, name, onChange, value }) => {
           type="text"
           name={name}
           onChange={onChange}
-          value={value}
+          defaultValue={value}
         />
       </label>
       <br />

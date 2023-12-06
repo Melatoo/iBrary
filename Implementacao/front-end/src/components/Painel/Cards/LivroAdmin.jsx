@@ -19,8 +19,9 @@ const CardLivroAdmin = ({ titulo, editora, autor, id, data, quantidade }) => {
   };
 
   const updateLivro = (id) => {
-    navigate();
+    navigate(`/admin/livros/update/${id}`, { state: { key: id.toString() } });
   };
+
   const navigate = useNavigate();
   return (
     <tr>
@@ -33,7 +34,7 @@ const CardLivroAdmin = ({ titulo, editora, autor, id, data, quantidade }) => {
       <td>
         <BotaoImagem src={imagemMulta} />
         <BotaoImagem src={imagemEmprestimo} />
-        <BotaoImagem src={imagemEditar} link={`/admin/livros/update/${id}`} />
+        <BotaoImagem src={imagemEditar} onClick={updateLivro.bind(this, id)} />
         <BotaoImagem src={imagemExcluir} onClick={deleteLivro.bind(this, id)} />
       </td>
     </tr>
