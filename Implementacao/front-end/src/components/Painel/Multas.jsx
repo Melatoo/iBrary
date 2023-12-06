@@ -1,4 +1,6 @@
 import CardMulta from "./Cards/Multa";
+import axios from "../../services/axios";
+import { useEffect, useState } from "react";
 
 const CabecalhoMultas = () => {
   return (
@@ -14,13 +16,31 @@ const CabecalhoMultas = () => {
 };
 
 const PainelMultas = () => {
+  const [multas, setMultas] = useState([]);
+  useEffect(() => {
+    axios
+      .get("/admin/multas")
+      .then((res) => {
+        setMultas(res.data);
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   return (
     <div id="tabela">
       <table>
         <CabecalhoMultas />
         <tbody>
-          <CardMulta idLivro="0" idAluno="202210077" valor="7,50" />
-          <CardMulta idLivro="1" idAluno="202210077" valor="100000" />
+          {multas.map((multa) => (
+            <CardMulta
+              key={multa.id}
+              id={multa.id}
+              idEmprestimo={multa.idEmprestimo}
+              valor={multa.valor}
+            />
+          ))}
         </tbody>
       </table>
     </div>
