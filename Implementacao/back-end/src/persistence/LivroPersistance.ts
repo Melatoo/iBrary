@@ -4,6 +4,10 @@ const getLivros = async () => {
   return await prisma.livro.findMany();
 };
 
+const getLivroById = async (id: number) => {
+  return await prisma.livro.findUnique({ where: { id } });
+};
+
 const createLivro = async (livro: LivroType) => {
   return await prisma.livro.create({ data: livro });
 };
@@ -16,4 +20,10 @@ const deleteLivro = async (id: number) => {
   return await prisma.livro.delete({ where: { id } });
 };
 
-export default { getLivros, createLivro, updateLivro, deleteLivro };
+export default {
+  getLivros,
+  createLivro,
+  updateLivro,
+  deleteLivro,
+  getLivroById,
+};

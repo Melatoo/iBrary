@@ -1,10 +1,11 @@
 import "./BotaoImagem.css";
+import { Link } from "react-router-dom";
 
-const BotaoImagem = ({ src, onClick }) => {
+const BotaoImagem = ({ src, onClick, link }) => {
   return (
-    <button id="botaoImagem" onClick={onClick}>
+    <Link id="botaoImagem" onClick={onClick} to={link}>
       <img src={src} id="imagemBotao" />
-    </button>
+    </Link>
   );
 };
 

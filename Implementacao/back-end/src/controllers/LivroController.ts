@@ -8,6 +8,11 @@ router.get("/", async (req, res) => {
   res.json(livros);
 });
 
+router.get("/:id", async (req, res) => {
+  const livro = await LivroServices.getLivroById(Number(req.params.id));
+  res.send(livro);
+});
+
 router.post("/add", async (req, res) => {
   const dadosLivro = {
     nome: req.body.nome,

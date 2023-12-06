@@ -1,6 +1,6 @@
 import "./CampoTexto.css";
 
-const CampoTexto = ({ label, placeholder, name, onChange }) => {
+const CampoTexto = ({ label, placeholder, name, onChange, value }) => {
   return (
     <div id="containerCampo">
       <label>
@@ -12,6 +12,7 @@ const CampoTexto = ({ label, placeholder, name, onChange }) => {
           type="text"
           name={name}
           onChange={onChange}
+          value={value}
         />
       </label>
       <br />

@@ -14,6 +14,7 @@ import AlunoLivros from "./views/Aluno/Livros.jsx";
 import AlunoEmprestimos from "./views/Aluno/Emprestimos.jsx";
 import AdicionarLivro from "./views/Admin/AdicionarLivro.jsx";
 import CadastrarEmprestimos from "./views/Admin/CadastrarEmprestimos.jsx";
+import EditarLivro from "./views/Admin/EditarLivro.jsx";
 
 const router = createBrowserRouter([
   {
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
   {
     path: "/admin/livros/add",
     element: <AdicionarLivro />,
+  },
+  {
+    path: "/admin/livros/update/:id",
+    element: <EditarLivro />,
   },
   {
     path: "/admin/emprestimos/cadastrar",
