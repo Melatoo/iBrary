@@ -13,6 +13,11 @@ const CardMulta = ({ id, idEmprestimo, valor }) => {
       })
       .catch((err) => console.log(err));
   };
+
+  const updateMulta = (id) => {
+    navigate(`/admin/multas/update/${id}`);
+  };
+
   return (
     <tr>
       <td>{id}</td>
