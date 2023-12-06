@@ -89,7 +89,7 @@ const EditarLivro = () => {
             value={livro.quantidade}
           />
           <div id="botaoContainer">
-            <Botao width="85%" texto="Adicionar" onClick={() => {}} />
+            <Botao width="85%" texto="Adicionar" />
           </div>
         </form>
       </div>

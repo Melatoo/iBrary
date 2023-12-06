@@ -16,6 +16,11 @@ const CardEmprestimo = ({ id, idLivro, idAluno, data, dataDev }) => {
       })
       .catch((err) => console.log(err));
   };
+
+  const updateEmprestimo = (id) => {
+    navigate(`/admin/emprestimos/update/${id}`);
+  };
+
   return (
     <tr>
       <td>{id}</td>
@@ -24,7 +29,10 @@ const CardEmprestimo = ({ id, idLivro, idAluno, data, dataDev }) => {
       <td>{data}</td>
       <td>{dataDev}</td>
       <td>
-        <BotaoImagem src={imagemEdit} />
+        <BotaoImagem
+          src={imagemEdit}
+          onClick={updateEmprestimo.bind(this, id)}
+        />
         <BotaoImagem
           src={imagemDelete}
           onClick={deleteEmprestimo.bind(this, id)}

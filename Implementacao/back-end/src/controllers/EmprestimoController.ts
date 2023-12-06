@@ -25,8 +25,8 @@ router.post("/add", async (req, res) => {
 router.patch("/update/:id", async (req, res) => {
   const dadosEmprestimo = {
     dataDevolucao: req.body.dataDevolucao,
-    livroId: req.body.livroId,
-    usuarioId: req.body.usuarioId,
+    idLivro: req.body.idLivro,
+    idAluno: req.body.idAluno,
   };
   res.send(
     await EmprestimoService.updateEmprestimo(
