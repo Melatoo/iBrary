@@ -42,22 +42,6 @@ const PainelLivros = () => {
               quantidade={livro.quantidade}
             />
           ))}
-          {/* <CardLivroAdmin
-            autor="Antoine deaaa Saint-Exupéry"
-            data="2023-20-10"
-            editora="HarperCollins"
-            id="1"
-            titulo="O Pequeno Príncipe"
-            quantidade="10"
-          />
-          <CardLivroAdmin
-            autor="Antoine deaaa Saint-Exupéry"
-            data="2023-20-10"
-            editora="HarperCollins"
-            id="1"
-            titulo="O Pequeno Príncipe"
-            quantidade="10"
-          /> */}
         </tbody>
       </table>
     </div>

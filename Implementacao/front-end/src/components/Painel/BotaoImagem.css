@@ -1,7 +1,10 @@
 #botaoImagem {
   cursor: pointer;
   border: none;
+  margin: 0;
   margin-left: 5px;
+  padding: 0;
+  background-color: transparent;
 }
 
 #botatoImagem:hover {
