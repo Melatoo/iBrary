@@ -5,7 +5,7 @@ import axios from "../../../services/axios";
 import { useNavigate } from "react-router-dom";
 import "../Painel.css";
 
-const CardEmprestimo = ({ id, idLivro, matricula, duracao, data }) => {
+const CardEmprestimo = ({ id, idLivro, idAluno, data, dataDev }) => {
   const navigate = useNavigate();
   const deleteEmprestimo = (id) => {
     axios
@@ -20,9 +20,9 @@ const CardEmprestimo = ({ id, idLivro, matricula, duracao, data }) => {
     <tr>
       <td>{id}</td>
       <td>{idLivro}</td>
-      <td>{matricula}</td>
-      <td>{duracao}</td>
+      <td>{idAluno}</td>
       <td>{data}</td>
+      <td>{dataDev}</td>
       <td>
         <BotaoImagem src={imagemEdit} />
         <BotaoImagem
