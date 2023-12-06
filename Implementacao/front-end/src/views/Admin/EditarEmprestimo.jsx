@@ -57,7 +57,7 @@ const EditarEmprestimo = () => {
       <div id="container">
         <IbraryLogo />
         <div id="cadastroTituloContainer">
-          <Titulo texto="Adicionar emprestimo" />
+          <Titulo texto="Editar emprestimo" />
         </div>
         <form id="formContainer" onSubmit={handleSubmit}>
           <CampoTexto
@@ -82,7 +82,7 @@ const EditarEmprestimo = () => {
             value={emprestimo.dataDevolucao}
           />
           <div id="botaoContainer">
-            <Botao width="85%" texto="Adicionar" />
+            <Botao width="85%" texto="Editar" />
           </div>
         </form>
       </div>
