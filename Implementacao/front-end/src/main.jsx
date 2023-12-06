@@ -15,6 +15,7 @@ import AlunoEmprestimos from "./views/Aluno/Emprestimos.jsx";
 import AdicionarLivro from "./views/Admin/AdicionarLivro.jsx";
 import CadastrarEmprestimos from "./views/Admin/CadastrarEmprestimos.jsx";
 import EditarLivro from "./views/Admin/EditarLivro.jsx";
+import EditarEmprestimo from "./views/Admin/EditarEmprestimo.jsx";
 
 const router = createBrowserRouter([
   {
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
   {
     path: "/admin/emprestimos/cadastrar",
     element: <CadastrarEmprestimos />,
+  },
+  {
+    path: "admin/emprestimos/update/:id",
+    element: <EditarEmprestimo />,
   },
 ]);
 
