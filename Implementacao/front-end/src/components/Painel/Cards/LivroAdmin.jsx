@@ -32,8 +32,6 @@ const CardLivroAdmin = ({ titulo, editora, autor, id, data, quantidade }) => {
       <td>{data}</td>
       <td>{quantidade}</td>
       <td>
-        <BotaoImagem src={imagemMulta} />
-        <BotaoImagem src={imagemEmprestimo} />
         <BotaoImagem src={imagemEditar} onClick={updateLivro.bind(this, id)} />
         <BotaoImagem src={imagemExcluir} onClick={deleteLivro.bind(this, id)} />
       </td>
