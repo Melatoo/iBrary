@@ -57,7 +57,7 @@ const EditarLivro = () => {
       <div id="container">
         <IbraryLogo />
         <div id="cadastroTituloContainer">
-          <Titulo texto="Adicionar livro" />
+          <Titulo texto="Editar livro" />
         </div>
         <form id="formContainer" onSubmit={handleSubmit}>
           <CampoTexto
@@ -89,7 +89,7 @@ const EditarLivro = () => {
             value={livro.quantidade}
           />
           <div id="botaoContainer">
-            <Botao width="85%" texto="Adicionar" />
+            <Botao width="85%" texto="Editar" />
           </div>
         </form>
       </div>

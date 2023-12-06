@@ -39,7 +39,7 @@ const CadastrarEmprestimos = () => {
       <div id="container">
         <IbraryLogo />
         <div id="cadastroTituloContainer">
-          <Titulo texto="Cadastrar empréstimo" />
+          <Titulo texto="Editar empréstimo" />
         </div>
         <form id="formContainer">
           <CampoTexto
@@ -55,7 +55,7 @@ const CadastrarEmprestimos = () => {
             onChange={(event) => setIdAluno(Number(event.target.value))}
           />
           <div id="botaoContainer">
-            <Botao width="85%" texto="Cadastrar" onClick={handleSubmit} />
+            <Botao width="85%" texto="Editar" onClick={handleSubmit} />
           </div>
         </form>
       </div>

@@ -47,6 +47,7 @@ const Cadastro = () => {
             placeholder="Digite seu email"
             name="email"
             onChange={(e) => setEmail(e.target.value)}
+            tipo="email"
           />
           <CampoTexto
             label="Nome completo"
@@ -65,6 +66,7 @@ const Cadastro = () => {
             placeholder="Digite sua senha"
             name="senha"
             onChange={(e) => setSenha(e.target.value)}
+            tipo="password"
           />
           <div id="botaoContainer">
             <Botao width="85%" texto="Entrar" />

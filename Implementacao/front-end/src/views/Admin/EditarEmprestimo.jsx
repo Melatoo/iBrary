@@ -23,6 +23,7 @@ const EditarEmprestimo = () => {
       idAluno: idAluno,
       dataDev: dataDev,
     };
+
     axios
       .patch(`/admin/emprestimos/update/${emprestimo.id}`, emprestimoAtualizado)
       .then((response) => {
@@ -44,6 +45,7 @@ const EditarEmprestimo = () => {
         setDataDev(response.data.dataDevolucao);
         console.log(response.data);
       })
+
       .catch((err) => {
         console.log(err);
         console.log("Erro ao buscar emprestimo");

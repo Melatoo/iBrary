@@ -1,15 +1,16 @@
 import "./CampoTexto.css";
 
-const CampoTexto = ({ label, placeholder, name, onChange, value }) => {
+const CampoTexto = ({ label, placeholder, name, onChange, value, tipo }) => {
   return (
     <div id="containerCampo">
       <label>
         {label}
         <br />
         <input
+          required
           id="campo"
           placeholder={placeholder}
-          type="text"
+          type={tipo}
           name={name}
           onChange={onChange}
           defaultValue={value}

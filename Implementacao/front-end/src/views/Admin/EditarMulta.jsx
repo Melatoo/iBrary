@@ -70,7 +70,7 @@ const EditarMulta = () => {
             value={multa.valor}
           />
           <div id="botaoContainer">
-            <Botao width="85%" texto="Adicionar" />
+            <Botao width="85%" texto="Editar" />
           </div>
         </form>
       </div>

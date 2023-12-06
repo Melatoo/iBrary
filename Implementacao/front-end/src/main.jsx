@@ -83,6 +83,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <title>iBrary</title>
     <RouterProvider router={router} />
   </React.StrictMode>
 );
