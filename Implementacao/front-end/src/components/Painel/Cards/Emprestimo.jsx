@@ -26,7 +26,6 @@ const CardEmprestimo = ({ id, idLivro, idAluno, data, dataDev }) => {
       <td>
         <BotaoImagem src={imagemEdit} />
         <BotaoImagem
-          link="/admin"
           src={imagemDelete}
           onClick={deleteEmprestimo.bind(this, id)}
         />

@@ -5,7 +5,7 @@ const CabecalhoMultas = () => {
     <thead>
       <tr>
         <td>ID Livro</td>
-        <td>Matrícula</td>
+        <td>ID Aluno</td>
         <td>Valor (em reais)</td>
         <td />
       </tr>
@@ -19,8 +19,8 @@ const PainelMultas = () => {
       <table>
         <CabecalhoMultas />
         <tbody>
-          <CardMulta idLivro="0" matricula="202210077" valor="7,50" />
-          <CardMulta idLivro="1" matricula="202210077" valor="100000" />
+          <CardMulta idLivro="0" idAluno="202210077" valor="7,50" />
+          <CardMulta idLivro="1" idAluno="202210077" valor="100000" />
         </tbody>
       </table>
     </div>

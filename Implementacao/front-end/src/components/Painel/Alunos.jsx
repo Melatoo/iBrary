@@ -11,7 +11,6 @@ const CabecalhoAlunos = () => {
         <td>Nome</td>
         <td>Email</td>
         <td>Matricula</td>
-        <td>Data de cadastro</td>
       </tr>
     </thead>
   );
@@ -38,10 +37,10 @@ const PainelAlunos = () => {
           {alunos.map((aluno) => {
             return (
               <CardAluno
+                id={aluno.id}
                 nome={aluno.nome}
                 email={aluno.email}
                 matricula={aluno.matricula}
-                // data={aluno.dataCadastro}
                 key={aluno.id}
               />
             );

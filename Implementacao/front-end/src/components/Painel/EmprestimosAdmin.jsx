@@ -21,7 +21,7 @@ const PainelEmprestimosAdmin = () => {
   const [emprestimos, setEmprestimos] = useState([]);
   useEffect(() => {
     axios
-      .get("/emprestimos")
+      .get("/admin/emprestimos")
       .then((res) => {
         setEmprestimos(res.data);
         console.log(res.data);
@@ -37,23 +37,13 @@ const PainelEmprestimosAdmin = () => {
         <tbody>
           {emprestimos.map((emprestimo) => (
             <CardEmprestimo
+              id={emprestimo.id}
               idLivro={emprestimo.idLivro}
-              matricula={emprestimo.matricula}
-              duracao={emprestimo.duracao}
+              idAluno={emprestimo.idAluno}
+              data={emprestimo.dataEmprestimo}
+              dataDev={emprestimo.dataDevolucao}
             />
           ))}
-          <CardEmprestimo
-            idLivro="0"
-            matricula="202210077"
-            duracao="4"
-            data="2023-20-10"
-          />
-          <CardEmprestimo
-            nome="Thiago Melato"
-            email="thiago.fonseca@compjunior"
-            matricula="202210077"
-            data="2023-20-10"
-          />
         </tbody>
       </table>
     </div>
