@@ -29,6 +29,7 @@ const EditarLivro = () => {
       .patch(`/admin/livros/update/${livro.id}`, livroAtualizado)
       .then((response) => {
         console.log(response);
+        console.log(livroAtualizado);
         navigate("/admin/livros");
       })
       .catch((err) => console.log(err));
@@ -40,6 +41,10 @@ const EditarLivro = () => {
       .get(`/admin/livros/${id}`)
       .then((response) => {
         setLivro(response.data);
+        setNome(response.data.nome);
+        setAutor(response.data.autor);
+        setEditora(response.data.editora);
+        setQuantidade(response.data.quantidade);
       })
       .catch((err) => {
         console.log(err);
