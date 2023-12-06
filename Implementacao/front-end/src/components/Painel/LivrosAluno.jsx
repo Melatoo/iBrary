@@ -1,4 +1,6 @@
 import CardLivro from "./Cards/Livro";
+import { useState } from "react";
+import axios from "../../services/axios";
 
 const CabecalhoLivrosAluno = () => {
   return (
@@ -15,25 +17,29 @@ const CabecalhoLivrosAluno = () => {
 };
 
 const PainelLivros = () => {
+  const [livros, setLivros] = useState([]);
+  axios
+    .get("/admin/livros")
+    .then((response) => {
+      setLivros(response.data);
+      console.log(response);
+    })
+    .catch((err) => console.log(err));
   return (
     <div id="tabela">
       <table>
         <CabecalhoLivrosAluno />
         <tbody>
-          <CardLivro
-            autor="Antoine deaaa Saint-Exupéry"
-            data="2023-20-10"
-            editora="HarperCollins"
-            id="1"
-            titulo="O Pequeno Príncipe"
-          />
-          <CardLivro
-            autor="Antoine deaaa Saint-Exupéry"
-            data="2023-20-10"
-            editora="HarperCollins"
-            id="1"
-            titulo="O Pequeno Príncipe"
-          />
+          {livros.map((livro) => (
+            <CardLivro
+              autor={livro.autor}
+              data={livro.dataCadastro}
+              editora={livro.editora}
+              id={livro.id}
+              titulo={livro.nome}
+              quantidade={livro.quantidade}
+            />
+          ))}
         </tbody>
       </table>
     </div>

@@ -8,7 +8,7 @@ const BarraDePesquisa = ({ placeholder, onChange }) => {
         placeholder={placeholder}
         onChange={onChange}
         id="imputPesquisa"
-        class="icon"
+        className="icon"
       />
     </div>
   );
