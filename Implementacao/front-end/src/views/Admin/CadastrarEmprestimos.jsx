@@ -25,6 +25,14 @@ const CadastrarEmprestimos = () => {
         navigate("/admin/emprestimos");
       })
       .catch((err) => console.log(err));
+
+    axios.get("/admin/livros/" + idLivro).then((response) => {
+      const livro = response.data;
+      livro.quantidade--;
+      axios.patch("/admin/livros/update/" + idLivro, livro).then((response) => {
+        console.log(response);
+      });
+    });
   };
   return (
     <Background>
