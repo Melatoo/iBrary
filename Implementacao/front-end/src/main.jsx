@@ -16,6 +16,7 @@ import AdicionarLivro from "./views/Admin/AdicionarLivro.jsx";
 import CadastrarEmprestimos from "./views/Admin/CadastrarEmprestimos.jsx";
 import EditarLivro from "./views/Admin/EditarLivro.jsx";
 import EditarEmprestimo from "./views/Admin/EditarEmprestimo.jsx";
+import EditarMulta from "./views/Admin/EditarMulta.jsx";
 
 const router = createBrowserRouter([
   {
@@ -73,6 +74,10 @@ const router = createBrowserRouter([
   {
     path: "admin/emprestimos/update/:id",
     element: <EditarEmprestimo />,
+  },
+  {
+    path: "admin/multas/update/:id",
+    element: <EditarMulta />,
   },
 ]);
 

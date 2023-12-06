@@ -4,6 +4,10 @@ const getMultas = async () => {
   return await MultaPersistance.getMultas();
 };
 
+const getMultaById = async (id: number) => {
+  return await MultaPersistance.getMultaById(id);
+};
+
 const createMulta = async (multa: MultaType) => {
   return await MultaPersistance.createMulta(multa);
 };
@@ -16,4 +20,10 @@ const deleteMulta = async (id: number) => {
   return await MultaPersistance.deleteMulta(id);
 };
 
-export default { getMultas, createMulta, updateMulta, deleteMulta };
+export default {
+  getMultas,
+  createMulta,
+  updateMulta,
+  deleteMulta,
+  getMultaById,
+};

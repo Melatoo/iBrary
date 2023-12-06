@@ -8,6 +8,11 @@ router.get("/", async (req, res) => {
   res.json(multas);
 });
 
+router.get("/:id", async (req, res) => {
+  const multa = await MultaServices.getMultaById(Number(req.params.id));
+  res.send(multa);
+});
+
 // router.post("/add", async (req, res) => {
 //   const multa = {
 //     valor: req.body.valor,
