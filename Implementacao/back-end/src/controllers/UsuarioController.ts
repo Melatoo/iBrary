@@ -7,16 +7,6 @@ router.get("/", async (req, res) => {
   res.json(usuarios);
 });
 
-router.post("/add", async (req, res) => {
-  const usuario = {
-    nome: req.body.nome,
-    email: req.body.email,
-    senha: req.body.senha,
-    matricula: req.body.matricula,
-  };
-  res.send(await UsuarioServices.createUsuario(usuario));
-});
-
 router.delete("/delete/:id", async (req, res) => {
   const id = parseInt(req.params.id);
   res.send(await UsuarioServices.deleteUsuario(id));
