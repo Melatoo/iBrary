@@ -10,7 +10,7 @@ import { UsuarioComumController } from "./controllers/UsuarioComumController";
 
 const router = Router();
 
-router.use("/", livroUsuarioController);
+router.use("/livros", livroUsuarioController);
 router.use("/alunos", UsuarioComumController);
 router.use("/emprestimos", multasUsuarioController);
 router.use("/admin/livros", livroController);

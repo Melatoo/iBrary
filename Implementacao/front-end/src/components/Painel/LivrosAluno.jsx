@@ -20,7 +20,7 @@ const PainelLivros = () => {
   const [livros, setLivros] = useState([]);
   useEffect(() => {
     axios
-      .get("/admin/livros")
+      .get("/livros")
       .then((response) => {
         setLivros(response.data);
         console.log(response);
