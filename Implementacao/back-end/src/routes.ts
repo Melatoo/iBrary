@@ -6,10 +6,12 @@ import { emprestimoController } from "./controllers/EmprestimoController";
 import { multaController } from "./controllers/MultaController";
 import { livroUsuarioController } from "./controllers/LivroUsuarioController";
 import { multasUsuarioController } from "./controllers/MultasUsuarioController";
+import { UsuarioComumController } from "./controllers/UsuarioComumController";
 
 const router = Router();
 
 router.use("/", livroUsuarioController);
+router.use("/alunos", UsuarioComumController);
 router.use("/emprestimos", multasUsuarioController);
 router.use("/admin/livros", livroController);
 router.use("/admin/alunos", usuarioController);
