@@ -4,6 +4,7 @@ const CabecalhoEmprestimos = () => {
   return (
     <thead>
       <tr>
+        <td>ID</td>
         <td>ID Livro</td>
         <td>Matrícula</td>
         <td>Duração (semanas)</td>
