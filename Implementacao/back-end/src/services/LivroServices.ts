@@ -20,4 +20,20 @@ const deleteLivro = async (id: number) => {
   return await LivroPersistance.deleteLivro(id);
 };
 
-export default { getLivros, createLivro, updateLivro, deleteLivro, getLivroById };
+const decrementLivro = async (id: number) => {
+  return await LivroPersistance.decrementLivro(id);
+};
+
+const incrementLivro = async (id: number) => {
+  return await LivroPersistance.incrementLivro(id);
+};
+
+export default {
+  getLivros,
+  createLivro,
+  updateLivro,
+  deleteLivro,
+  getLivroById,
+  decrementLivro,
+  incrementLivro,
+};

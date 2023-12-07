@@ -71,7 +71,7 @@ const EditarEmprestimo = () => {
             label="idAluno"
             placeholder="Digite o idAluno"
             name="editora"
-            onChange={(event) => setidAluno(Number(event.target.value))}
+            onChange={(event) => setIdAluno(Number(event.target.value))}
             value={emprestimo.idAluno}
           />
           <CampoTexto
