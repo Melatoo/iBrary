@@ -49,6 +49,11 @@ const updateEmprestimo = async (id: number, emprestimo: any) => {
   if (emprestimo.idLivro === undefined || emprestimo.idAluno === undefined) {
     throw new Error("idLivro e idAluno não podem ser undefined");
   }
+
+  const emprestimoAntigo = await prisma.emprestimo.findUnique({
+    where: { id: id },
+  });
+
   const livro = await prisma.livro.findUnique({
     where: { id: emprestimo.idLivro },
   });
@@ -60,7 +65,26 @@ const updateEmprestimo = async (id: number, emprestimo: any) => {
     throw new Error("Livro não disponível");
   }
 
-  console.log(livro.quantidade);
+  if (emprestimoAntigo?.idLivro !== emprestimo.idLivro) {
+    await prisma.livro.update({
+      where: { id: emprestimoAntigo?.idLivro },
+      data: {
+        quantidade: {
+          increment: 1,
+        },
+      },
+    });
+
+    await prisma.livro.update({
+      where: { id: emprestimo.idLivro },
+      data: {
+        quantidade: {
+          decrement: 1,
+        },
+      },
+    });
+  }
+
   return await prisma.emprestimo.update({
     where: { id: id },
     data: emprestimo,

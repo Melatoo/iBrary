@@ -39,7 +39,11 @@ const PainelLivros = () => {
             <CardLivroAdmin
               key={livro.id}
               autor={livro.autor}
-              data={livro.dataCadastro}
+              data={livro.dataCadastro
+                .split("T")[0]
+                .split("-")
+                .reverse()
+                .join("/")}
               editora={livro.editora}
               id={livro.id}
               titulo={livro.nome}

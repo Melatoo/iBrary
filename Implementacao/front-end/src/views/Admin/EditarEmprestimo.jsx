@@ -21,14 +21,12 @@ const EditarEmprestimo = () => {
     const emprestimoAtualizado = {
       idLivro: idLivro,
       idAluno: idAluno,
-      dataDev: dataDev,
+      dataDevolucao: dataDev,
     };
 
     axios
       .patch(`/admin/emprestimos/update/${emprestimo.id}`, emprestimoAtualizado)
       .then((response) => {
-        console.log(response);
-        console.log(emprestimoAtualizado);
         navigate("/admin/emprestimos");
       })
       .catch((err) => console.log(err));
@@ -78,7 +76,7 @@ const EditarEmprestimo = () => {
             label="dataDev"
             placeholder="Digite a data de devolução"
             name="dataDev"
-            onChange={(event) => setQuantidade(event.target.value)}
+            onChange={(event) => setDataDev(event.target.value)}
             value={emprestimo.dataDevolucao}
           />
           <div id="botaoContainer">

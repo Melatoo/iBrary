@@ -9,6 +9,9 @@ const getLivroById = async (id: number) => {
 };
 
 const createLivro = async (livro: LivroType) => {
+  if (livro.quantidade < 0) {
+    throw new Error("Quantidade não pode ser negativa");
+  }
   return await prisma.livro.create({ data: livro });
 };
 

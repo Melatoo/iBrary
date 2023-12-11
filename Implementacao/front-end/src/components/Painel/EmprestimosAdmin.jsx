@@ -41,8 +41,16 @@ const PainelEmprestimosAdmin = () => {
               id={emprestimo.id}
               idLivro={emprestimo.idLivro}
               idAluno={emprestimo.idAluno}
-              data={emprestimo.dataEmprestimo}
-              dataDev={emprestimo.dataDevolucao}
+              data={emprestimo.dataEmprestimo
+                .split("T")[0]
+                .split("-")
+                .reverse()
+                .join("/")}
+              dataDev={emprestimo.dataDevolucao
+                .split("T")[0]
+                .split("-")
+                .reverse()
+                .join("/")}
             />
           ))}
         </tbody>

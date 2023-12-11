@@ -11,6 +11,7 @@ const CadastrarEmprestimos = () => {
   const navigate = useNavigate();
   const [idLivro, setIdLivro] = useState(null);
   const [idAluno, setIdAluno] = useState(null);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const emprestimo = {
@@ -18,6 +19,7 @@ const CadastrarEmprestimos = () => {
       idAluno,
     };
     console.log(emprestimo);
+    
     axios
       .post("/admin/emprestimos/add", emprestimo)
       .then((response) => {
