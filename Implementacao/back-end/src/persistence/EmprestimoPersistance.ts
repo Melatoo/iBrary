@@ -42,6 +42,8 @@ const createEmprestimo = async (emprestimo: EmprestimoType) => {
 };
 
 const deleteEmprestimo = async (id: number) => {
+  const emprestimoa = await prisma.emprestimo.findUnique({ where: { id } });
+  console.log(emprestimoa);
   return await prisma.emprestimo.delete({ where: { id } });
 };
 

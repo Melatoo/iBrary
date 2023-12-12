@@ -43,7 +43,9 @@ router.delete("/delete/:id", async (req, res) => {
     Number(req.params.id)
   );
   LivroServices.incrementLivro(Number(emprestimo?.idLivro));
+  console.log(req.params.id);
   res.send(await EmprestimoService.deleteEmprestimo(Number(req.params.id)));
+  console.log("deletou o emprestimo");
 });
 
 export { router as emprestimoController };
