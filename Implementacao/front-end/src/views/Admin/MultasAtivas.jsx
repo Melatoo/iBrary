@@ -6,7 +6,7 @@ const MultasAtivas = () => {
     <BackgroundPainel
       tipoLista="multas"
       textoBotao="Adicionar multa"
-      path="admin/multas/cadastrar"
+      path="/admin/multas/cadastrar"
     >
       <PainelMultas />
     </BackgroundPainel>

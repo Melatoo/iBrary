@@ -17,6 +17,7 @@ import CadastrarEmprestimos from "./views/Admin/CadastrarEmprestimos.jsx";
 import EditarLivro from "./views/Admin/EditarLivro.jsx";
 import EditarEmprestimo from "./views/Admin/EditarEmprestimo.jsx";
 import EditarMulta from "./views/Admin/EditarMulta.jsx";
+import AdicionarMulta from "./views/Admin/AdicionarMulta.jsx";
 
 const router = createBrowserRouter([
   {
@@ -78,6 +79,10 @@ const router = createBrowserRouter([
   {
     path: "admin/multas/update/:id",
     element: <EditarMulta />,
+  },
+  {
+    path: "admin/multas/cadastrar",
+    element: <AdicionarMulta />,
   },
 ]);
 

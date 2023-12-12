@@ -13,13 +13,13 @@ router.get("/:id", async (req, res) => {
   res.send(multa);
 });
 
-// router.post("/add", async (req, res) => {
-//   const multa = {
-//     valor: req.body.valor,
-//     idEmprestimo: req.body.idEmprestimo,
-//   };
-//   res.send(await MultaServices.createMulta(multa));
-// });
+router.post("/add", async (req, res) => {
+  const multa = {
+    valor: Number(req.body.valor),
+    idEmprestimo: Number(req.body.idEmprestimo),
+  };
+  res.send(await MultaServices.createMulta(multa));
+});
 
 router.patch("/update/:id", async (req, res) => {
   const multa = {
